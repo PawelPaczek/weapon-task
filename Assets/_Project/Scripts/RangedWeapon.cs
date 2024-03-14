@@ -6,7 +6,8 @@ using UnityEngine;
 public class RangedWeapon : Weapon
 {
     [SerializeField] private int ammoCount;
-    
+    public RangeWeaponType Type;
+
     public override void SelectWeapon()
     {
         base.SelectWeapon();
@@ -19,4 +20,9 @@ public class RangedWeapon : Weapon
         Debug.Log("Using ranged weapon: " + Name);
     }
 
+}
+public enum RangeWeaponType
+{
+    Pistol,
+    Rifle
 }

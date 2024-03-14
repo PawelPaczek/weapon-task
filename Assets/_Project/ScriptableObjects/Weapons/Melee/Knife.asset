@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e4f6514513a8e147a92f66a3b4cd92f, type: 3}
-  m_Name: New Melee Weapon
+  m_Name: Knife
   m_EditorClassIdentifier: 

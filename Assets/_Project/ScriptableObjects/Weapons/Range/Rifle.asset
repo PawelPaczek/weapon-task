@@ -10,5 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 440bdec2d46a9a045a595475504c7024, type: 3}
-  m_Name: New Ranged Weapon
+  m_Name: Rifle
   m_EditorClassIdentifier: 
+  name: 
+  damage: 0
+  icon: {fileID: 0}
+  ammoCount: 0
+  Type: 1

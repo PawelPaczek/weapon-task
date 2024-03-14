@@ -14,6 +14,7 @@ public class Weapon : ScriptableObject, IWeapon
 
     public virtual void SelectWeapon()
     {
+        
     }
 
     public virtual void UseWeapon()

@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Melee Weapon", menuName = "Weapons/Melee Weapon")]
 public class MeleeWeapon : Weapon
 {
+    [SerializeField] private int durability;
+
+    public MeleeWeaponType Type;
     public override void SelectWeapon()
     {
         base.SelectWeapon();
@@ -16,4 +19,10 @@ public class MeleeWeapon : Weapon
         base.UseWeapon();
         Debug.Log("Using melee weapon: " + Name);
     }
+}
+
+public enum MeleeWeaponType
+{
+    Knife,
+    Sword
 }
