@@ -12,3 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4f6514513a8e147a92f66a3b4cd92f, type: 3}
   m_Name: Knife
   m_EditorClassIdentifier: 
+  name: Knife
+  damage: 5
+  iconAddress: Assets/_Project/Icons/knife.png
+  durability: 100
+  Type: 0

@@ -6,7 +6,7 @@ public interface IWeapon
 {
     string Name { get; }
     int Damage { get; }
-    Sprite Icon { get; }
+    string IconAddress { get; }
 
     void SelectWeapon();
     void UseWeapon();

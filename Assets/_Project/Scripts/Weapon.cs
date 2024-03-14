@@ -6,11 +6,11 @@ public class Weapon : ScriptableObject, IWeapon
 {
     [SerializeField] private string name;
     [SerializeField] private int damage;
-    [SerializeField] private Sprite icon;
+    [SerializeField] private string iconAddress;
 
     public string Name => name;
     public int Damage => damage;
-    public Sprite Icon => icon;
+    public string IconAddress => iconAddress;
 
     public virtual void SelectWeapon()
     {

@@ -6,7 +6,9 @@ public class WeaponsController : MonoBehaviour
 {
    [SerializeField] private List<Weapon> weapons;
    [SerializeField] private int currentWeaponIndex;
-
+   [SerializeField] private WeaponView weaponView;
+   [SerializeField] private AddressablesLoader addressablesLoader;
+   
     private void Start()
     {
         currentWeaponIndex = 0;
@@ -37,9 +39,10 @@ public class WeaponsController : MonoBehaviour
         SelectWeapon();
     }
 
-    private void SelectWeapon()
+    private async void SelectWeapon()
     {
         weapons[currentWeaponIndex].SelectWeapon();
-        // Aktualizacja UI z nazwą i ikoną
+        Sprite weaponIcon = await addressablesLoader.GetIconAssetAsync(weapons[currentWeaponIndex].IconAddress);
+        weaponView.UpdateView(weapons[currentWeaponIndex].Name,weaponIcon);
     }
 }
