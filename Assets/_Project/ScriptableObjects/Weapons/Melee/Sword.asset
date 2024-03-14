@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4f6514513a8e147a92f66a3b4cd92f, type: 3}
   m_Name: Sword
   m_EditorClassIdentifier: 
-  name: Sword
-  damage: 10
-  iconAddress: Assets/_Project/Icons/sword.png
-  durability: 25
+  _name: Sword
+  _damage: 10
+  _iconAddress: Assets/_Project/Icons/sword.png
+  _durability: 25

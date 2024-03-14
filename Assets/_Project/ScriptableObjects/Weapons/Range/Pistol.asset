@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 440bdec2d46a9a045a595475504c7024, type: 3}
   m_Name: Pistol
   m_EditorClassIdentifier: 
-  name: Pistol
-  damage: 5
-  iconAddress: Assets/_Project/Icons/pistol.png
-  ammoCount: 8
+  _name: Pistol
+  _damage: 5
+  _iconAddress: Assets/_Project/Icons/pistol.png
+  _ammoCount: 8

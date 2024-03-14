@@ -234,7 +234,7 @@ GameObject:
   m_Component:
   - component: {fileID: 658707418}
   - component: {fileID: 658707417}
-  - component: {fileID: 658707416}
+  - component: {fileID: 658707419}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -242,26 +242,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &658707416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 658707415}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &658707417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +272,36 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &658707419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 658707415}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: 989bd22e0e6a4d44f87bb5c7bdb2ae89, type: 3}
+  m_PointAction: {fileID: 0}
+  m_MoveAction: {fileID: 0}
+  m_SubmitAction: {fileID: 0}
+  m_CancelAction: {fileID: 0}
+  m_LeftClickAction: {fileID: 0}
+  m_MiddleClickAction: {fileID: 0}
+  m_RightClickAction: {fileID: 0}
+  m_ScrollWheelAction: {fileID: 0}
+  m_TrackedDevicePositionAction: {fileID: 0}
+  m_TrackedDeviceOrientationAction: {fileID: 0}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,8 +431,8 @@ Camera:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.17254902, g: 0.17254902, b: 0.17254902, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -470,50 +480,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1045101260
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1045101262}
-  - component: {fileID: 1045101261}
-  m_Layer: 0
-  m_Name: AddressableLoader
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1045101261
+--- !u!114 &1851132601 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3994643750682005842, guid: 40e37d489517d764ab0aa861c117b30e, type: 3}
+  m_PrefabInstance: {fileID: 3994643751957300490}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045101260}
-  m_Enabled: 1
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dffaca6950a0b84fba346e4538f8246, type: 3}
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &1045101262
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!114 &1862925149 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3994643750804535599, guid: 40e37d489517d764ab0aa861c117b30e, type: 3}
+  m_PrefabInstance: {fileID: 3994643751957300490}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1045101260}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1092.5859, y: 89.08908, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1996300530
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,6 +512,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1996300532}
   - component: {fileID: 1996300531}
+  - component: {fileID: 1996300533}
   m_Layer: 0
   m_Name: WeaponsController
   m_TagString: Untagged
@@ -543,15 +532,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a7c9f36600706c488c42f5782da2b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponsData:
-  - {fileID: 11400000, guid: 7327c1b7a2d76c946897bb69435c8af7, type: 2}
-  - {fileID: 11400000, guid: 80389662f9981354cabb30b29668083f, type: 2}
+  _weaponsData:
   - {fileID: 11400000, guid: b7c8d743a61a58a429ae4887c5801099, type: 2}
   - {fileID: 11400000, guid: 153efbc057935fb4c883ad1f7d5b2de1, type: 2}
-  weapons: []
-  currentWeaponIndex: 0
-  weaponView: {fileID: 2050245367}
-  addressablesLoader: {fileID: 1045101261}
+  - {fileID: 11400000, guid: 80389662f9981354cabb30b29668083f, type: 2}
+  - {fileID: 11400000, guid: 7327c1b7a2d76c946897bb69435c8af7, type: 2}
+  _currentWeaponIndex: 0
+  _weaponView: {fileID: 2050245367}
+  _useWeapon: {fileID: -8400889926636588908, guid: 989bd22e0e6a4d44f87bb5c7bdb2ae89, type: 3}
+  _selectNextWeapon: {fileID: 6284574241012977612, guid: 989bd22e0e6a4d44f87bb5c7bdb2ae89, type: 3}
 --- !u!4 &1996300532
 Transform:
   m_ObjectHideFlags: 0
@@ -567,6 +556,44 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1996300533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1996300530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 989bd22e0e6a4d44f87bb5c7bdb2ae89, type: 3}
+  m_NotificationBehavior: 3
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 3df9ce4d-5d42-44fc-8c28-6b20f0d8a92d
+    m_ActionName: Player/UseWeapon[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: da2d8929-f648-48b1-a45e-036f99704c07
+    m_ActionName: Player/SelectNextWeapon[/Mouse/rightButton]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!224 &2050245366 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3994643750446057468, guid: 40e37d489517d764ab0aa861c117b30e, type: 3}
@@ -674,6 +701,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3994643750446057469, guid: 40e37d489517d764ab0aa861c117b30e, type: 3}
+      propertyPath: _weaponIcon
+      value: 
+      objectReference: {fileID: 1851132601}
+    - target: {fileID: 3994643750446057469, guid: 40e37d489517d764ab0aa861c117b30e, type: 3}
+      propertyPath: _weaponName
+      value: 
+      objectReference: {fileID: 1862925149}
     - target: {fileID: 3994643750446057471, guid: 40e37d489517d764ab0aa861c117b30e, type: 3}
       propertyPath: m_Name
       value: WeaponView
