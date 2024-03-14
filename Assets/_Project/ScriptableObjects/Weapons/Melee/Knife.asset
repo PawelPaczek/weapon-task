@@ -15,5 +15,4 @@ MonoBehaviour:
   name: Knife
   damage: 5
   iconAddress: Assets/_Project/Icons/knife.png
-  durability: 100
-  Type: 0
+  durability: 10

@@ -15,5 +15,4 @@ MonoBehaviour:
   name: Sword
   damage: 10
   iconAddress: Assets/_Project/Icons/sword.png
-  durability: 100
-  Type: 1
+  durability: 25

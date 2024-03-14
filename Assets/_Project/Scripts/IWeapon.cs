@@ -2,12 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IWeapon
+public interface IWeapon 
 {
-    string Name { get; }
-    int Damage { get; }
-    string IconAddress { get; }
-
-    void SelectWeapon();
-    void UseWeapon();
+     string ItemName { get; }
+     int Damage{ get; }
+     string IconAddress{ get; }
+    void Select();
+    void Use();
 }

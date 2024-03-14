@@ -16,4 +16,3 @@ MonoBehaviour:
   damage: 5
   iconAddress: Assets/_Project/Icons/pistol.png
   ammoCount: 8
-  Type: 0

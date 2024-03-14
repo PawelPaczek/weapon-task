@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Weapon : ScriptableObject, IWeapon
+public class WeaponData : ScriptableObject, IWeaponData
 {
     [SerializeField] private string name;
     [SerializeField] private int damage;
@@ -11,13 +11,4 @@ public class Weapon : ScriptableObject, IWeapon
     public string Name => name;
     public int Damage => damage;
     public string IconAddress => iconAddress;
-
-    public virtual void SelectWeapon()
-    {
-        
-    }
-
-    public virtual void UseWeapon()
-    {
-    }
 }

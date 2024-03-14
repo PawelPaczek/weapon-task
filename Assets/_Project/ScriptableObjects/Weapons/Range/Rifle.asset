@@ -16,4 +16,3 @@ MonoBehaviour:
   damage: 10
   iconAddress: Assets/_Project/Icons/rifle.png
   ammoCount: 12
-  Type: 1

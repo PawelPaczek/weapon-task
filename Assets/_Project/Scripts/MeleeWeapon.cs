@@ -2,27 +2,38 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Melee Weapon", menuName = "Weapons/Melee Weapon")]
-public class MeleeWeapon : Weapon
+public class MeleeWeapon : IWeapon
 {
-    [SerializeField] private int durability;
+    public string itemName;
+    public int damage;
+    public string iconAddress;
+    public int durability;
 
-    public MeleeWeaponType Type;
-    public override void SelectWeapon()
-    {
-        base.SelectWeapon();
-        Debug.Log("Select melee weapon: " + Name);
-    }
-    
-    public override void UseWeapon()
-    {
-        base.UseWeapon();
-        Debug.Log("Using melee weapon: " + Name);
-    }
-}
+    public string ItemName => itemName;
+    public int Damage => damage;
+    public string IconAddress => iconAddress;
 
-public enum MeleeWeaponType
-{
-    Knife,
-    Sword
+    public void Select()
+    {
+        Debug.Log($"Using melee weapon: {itemName}");
+    }
+
+    public void Use()
+    {
+        if (durability > 0)
+        {
+            Debug.Log($"Using melee weapon: {itemName}");
+            UpdateDurability(-1);
+            Debug.Log($"Durability left: {durability}");
+        }
+        else
+        {
+            Debug.Log($"Durability left: {durability}, fix your weapon");
+        }
+    }
+
+    public void UpdateDurability(int amount)
+    {
+        durability += amount;
+    }
 }
